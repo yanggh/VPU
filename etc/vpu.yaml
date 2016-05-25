@@ -1,0 +1,15 @@
+%YAML 1.1
+---
+id: 1
+dev: p3p1
+storage-time: 30
+disk-left: 5
+
+filedirs:
+- dir: /data2
+  disk: 1
+
+log:
+  level: info
+  mask: 0
+...

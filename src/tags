@@ -1,0 +1,546 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALAW_HEAD	fax_decode.c	/^}ALAW_HEAD, *PALAW_HEAD;$/;"	t	typeref:struct:__anon6	file:
+ATOMIC16_INIT	atomic.h	11;"	d
+AudioFormat	fax_decode.c	/^    uint16 AudioFormat;         \/\/14H 2 int 格式类别 0x0600H  $/;"	m	struct:__anon6	file:
+BitsPerSample	fax_decode.c	/^    uint32 BitsPerSample;       \/\/22H 4 每样本的数据位数，表示每个声道中各个样本的数据位数。如果有多个声道，对每个声道而言，样本大小都一样。  $/;"	m	struct:__anon6	file:
+BlockAlign	fax_decode.c	/^    uint16 BlockAlign;          \/\/20H 2 int 数据块的调整数（按字节算的），其值为Channels×BitsPerSample\/8  $/;"	m	struct:__anon6	file:
+ByteRate	fax_decode.c	/^    uint32 ByteRate;            \/\/1CH 4 long int 波形音频数据传送速率，其值Channels×SamplesPerSec×BitsPerSample\/8  $/;"	m	struct:__anon6	file:
+CASE_DIR	conf.h	19;"	d
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -Werror -O3 -mcmodel=medium -g -I..\/..\/include$/;"	m
+COLLECTOR_YAML_FILE	yaml_conf.h	5;"	d
+CONF_KEY	yaml_conf.c	/^	CONF_KEY = 0,$/;"	e	enum:conf_state	file:
+CONF_VAL	yaml_conf.c	/^	CONF_VAL,$/;"	e	enum:conf_state	file:
+COUNTER_STRUCT	conn_serv.h	15;"	d
+ChunkID	fax_decode.c	/^    uint32 ChunkID;             \/\/00H 4 char "RIFF"标志  $/;"	m	struct:__anon6	file:
+ChunkSize	fax_decode.c	/^    uint32 ChunkSize;           \/\/04H 4 long int 文件长度 文总长-8  $/;"	m	struct:__anon6	file:
+ConfCreateContextBackup	yaml_conf.c	/^void ConfCreateContextBackup(void)$/;"	f
+ConfDeInit	yaml_conf.c	/^ConfDeInit(void)$/;"	f
+ConfDump	yaml_conf.c	/^ConfDump(void)$/;"	f
+ConfGet	yaml_conf.c	/^ConfGet(const char *name, char **vptr)$/;"	f
+ConfGetBool	yaml_conf.c	/^int ConfGetBool(char *name, int *val)$/;"	f
+ConfGetChildValue	yaml_conf.c	/^int ConfGetChildValue(ConfNode *base, char *name, char **vptr)$/;"	f
+ConfGetChildValueBool	yaml_conf.c	/^int ConfGetChildValueBool(ConfNode *base, char *name, int *val)$/;"	f
+ConfGetChildValueInt	yaml_conf.c	/^int ConfGetChildValueInt(ConfNode *base, char *name, intmax_t *val)$/;"	f
+ConfGetDouble	yaml_conf.c	/^int ConfGetDouble(char *name, double *val)$/;"	f
+ConfGetFloat	yaml_conf.c	/^int ConfGetFloat(char *name, float *val)$/;"	f
+ConfGetInt	yaml_conf.c	/^int ConfGetInt(const char *name, intmax_t *val)$/;"	f
+ConfGetNode	yaml_conf.c	/^ConfGetNode(const char *key)$/;"	f
+ConfGetRootNode	yaml_conf.c	/^ConfNode *ConfGetRootNode(void)$/;"	f
+ConfInit	yaml_conf.c	/^void ConfInit(void)$/;"	f
+ConfLoadCompleteIncludePath	yaml_conf.c	/^char *ConfLoadCompleteIncludePath(char *file)$/;"	f
+ConfNode	yaml_conf.h	/^} ConfNode;$/;"	t	typeref:struct:ConfNode_
+ConfNodeChildValueIsTrue	yaml_conf.c	/^int ConfNodeChildValueIsTrue(ConfNode *node, const char *key)$/;"	f
+ConfNodeDump	yaml_conf.c	/^void ConfNodeDump(ConfNode *node, const char *prefix)$/;"	f
+ConfNodeFree	yaml_conf.c	/^ConfNodeFree(ConfNode *node)$/;"	f
+ConfNodeLookupChild	yaml_conf.c	/^ConfNodeLookupChild(ConfNode *node, const char *name)$/;"	f
+ConfNodeLookupChildValue	yaml_conf.c	/^const char * ConfNodeLookupChildValue(ConfNode *node, const char *name)$/;"	f
+ConfNodeLookupKeyValue	yaml_conf.c	/^ConfNode *ConfNodeLookupKeyValue(ConfNode *base, const char *key, const char *value)$/;"	f
+ConfNodeNew	yaml_conf.c	/^ConfNodeNew(void)$/;"	f
+ConfNodeRemove	yaml_conf.c	/^ConfNodeRemove(ConfNode *node)$/;"	f
+ConfNode_	yaml_conf.h	/^typedef struct ConfNode_ {$/;"	s
+ConfPrintNameArray	yaml_conf.c	/^ConfPrintNameArray(char **name_arr, int level)$/;"	f	file:
+ConfRemove	yaml_conf.c	/^int ConfRemove(char *name)$/;"	f
+ConfRestoreContextBackup	yaml_conf.c	/^void ConfRestoreContextBackup(void)$/;"	f
+ConfSet	yaml_conf.c	/^ConfSet(char *name, char *val, int allow_override)$/;"	f
+ConfValIsFalse	yaml_conf.c	/^int ConfValIsFalse(const char *val)$/;"	f
+ConfValIsTrue	yaml_conf.c	/^ConfValIsTrue(const char *val)$/;"	f
+ConfYamlLoadFile	yaml_conf.c	/^int ConfYamlLoadFile(const char *filename)$/;"	f
+ConfYamlLoadSubFile	yaml_conf.c	/^void ConfYamlLoadSubFile(void)$/;"	f
+ConfYamlParse	yaml_conf.c	/^ConfYamlParse(yaml_parser_t *parser, ConfNode *parent, int inseq)$/;"	f	file:
+DAEMON_WORKING_DIRECTORY	daemon.h	5;"	d
+DEBUG_MASK	conn_serv.h	13;"	d
+DEBUG_OFF	conn_serv.h	10;"	d
+DEBUG_ON	conn_serv.h	9;"	d
+DEFAULT_NAME_LEN	yaml_conf.c	15;"	d	file:
+DESTROY_QUEUE	fax_queue.c	/^void *DESTROY_QUEUE(QUEUE* queue)$/;"	f
+DISBIT1	fax_decode.c	69;"	d	file:
+DISBIT2	fax_decode.c	70;"	d	file:
+DISBIT3	fax_decode.c	71;"	d	file:
+DISBIT4	fax_decode.c	72;"	d	file:
+DISBIT5	fax_decode.c	73;"	d	file:
+DISBIT6	fax_decode.c	74;"	d	file:
+DISBIT7	fax_decode.c	75;"	d	file:
+DISBIT8	fax_decode.c	76;"	d	file:
+DMS_FILE	conf.h	10;"	d
+DataLen	fax_decode.c	/^    uint32 DataLen;                         \/\/36H 4 long int 语音数据的长度(文长-58)  $/;"	m	struct:__anon6	file:
+DataTag	fax_decode.c	/^    uint32 DataTag;             \/\/32H 4 char 数据标记符＂data＂  $/;"	m	struct:__anon6	file:
+E1_NUM	voice_parser.h	18;"	d
+EN_QUEUE	fax_queue.c	/^int EN_QUEUE(QUEUE* queue, STRUCT_CDR_PATH* tmp)$/;"	f
+FAX_BUF_SIZE	fax_queue.h	11;"	d
+FAX_NONE	fax_decode.c	/^    FAX_NONE,$/;"	e	enum:__anon4	file:
+FAX_NUM_MAX	conf.h	21;"	d
+FAX_V17_RX	fax_decode.c	/^    FAX_V17_RX$/;"	e	enum:__anon4	file:
+FAX_V27TER_RX	fax_decode.c	/^    FAX_V27TER_RX,$/;"	e	enum:__anon4	file:
+FAX_V29_RX	fax_decode.c	/^    FAX_V29_RX,$/;"	e	enum:__anon4	file:
+FETCH_PHEAD	fax_queue.c	/^STRUCT_CDR_PATH  *FETCH_PHEAD(QUEUE* queue)$/;"	f
+FILE_DIR	voice_parser.h	10;"	d
+FILE_MAX_NUM	voice_parser.h	11;"	d
+Format	fax_decode.c	/^    uint32 Format;              \/\/08H 4 char "WAVE"标志  $/;"	m	struct:__anon6	file:
+GET_COUNTER	conn_serv.h	7;"	d
+INIT_QUEUE	fax_queue.c	/^void *INIT_QUEUE(QUEUE**  eq, QUEUE** fq, int num)$/;"	f
+LIBS	Makefile	/^LIBS = -L..\/..\/lib -lpthread -lpcap -lyaml -lspandsp -ltiff -lm -lsndfile$/;"	m
+MANGLE_ERRORS_MAX	yaml_conf.c	17;"	d	file:
+MAX_BUF_NUM	voice_parser.h	14;"	d
+MAX_DIRS_LEN	conf.h	15;"	d
+MAX_DIRS_NUM	conf.h	14;"	d
+MAX_ETH_PACKET_LEN	vpu.h	13;"	d
+MAX_FILENAME_SIZE	voice_parser.h	15;"	d
+MAX_FILE_SIZE	file_server.c	25;"	d	file:
+Mangle	yaml_conf.c	/^Mangle(char *string)$/;"	f	file:
+NON_REAL_TIME_PLAY	file_server.c	23;"	d	file:
+NORMAL_DIR	conf.h	18;"	d
+NumChannels	fax_decode.c	/^    uint16 NumChannels;         \/\/16H 2 int 通道数，单声道为1，双声道为2  $/;"	m	struct:__anon6	file:
+PALAW_HEAD	fax_decode.c	/^}ALAW_HEAD, *PALAW_HEAD;$/;"	t	typeref:struct:__anon6	file:
+PCAP_ETH_PROMISC	vpu.h	14;"	d
+PCAP_TIMEOUT	vpu.h	15;"	d
+PKT_FIFO_SIZE	vpu.h	24;"	d
+PTH_STRUCT	fax_queue.h	/^}PTH_STRUCT;$/;"	t	typeref:struct:PTH_STRUCT_
+PTH_STRUCT_	fax_queue.h	/^typedef struct PTH_STRUCT_$/;"	s
+PathIsAbsolute	yaml_conf.c	/^static int PathIsAbsolute(const char *path) {$/;"	f	file:
+PathIsRelative	yaml_conf.c	/^int PathIsRelative(const char *path) {$/;"	f
+QUEUE	fax_queue.h	/^}QUEUE;$/;"	t	typeref:struct:QUEUE_
+QUEUE_	fax_queue.h	/^typedef struct QUEUE_$/;"	s
+QUEUE_NUM	fax_queue.h	10;"	d
+REAL_TIME_PLAY	file_server.c	22;"	d	file:
+RELOAD	conn_serv.h	6;"	d
+RTE_ATOMIC32_INIT	atomic.h	69;"	d
+SAMPLES_PER_CHUNK	fax_decode.c	67;"	d	file:
+SCCalloc	yaml_conf.h	43;"	d
+SCFree	yaml_conf.h	84;"	d
+SCMalloc	yaml_conf.h	57;"	d
+SCMemcmp	yaml_conf.h	89;"	d
+SCStrdup	yaml_conf.h	50;"	d
+SERVER_PORT	file_server.c	21;"	d	file:
+SERV_IP	conf.h	12;"	d
+SHOW_DEBUG_MASK	conn_serv.h	14;"	d
+SHOW_SYS_LEV	conn_serv.h	12;"	d
+SOFTWARE_STATUS	conn_serv.h	8;"	d
+SPANDSP_EXPOSE_INTERNAL_STRUCTURES	fax_decode.c	57;"	d	file:
+SR155_NUM	voice_parser.h	17;"	d
+STRUCT_CDR	fax_queue.h	/^}STRUCT_CDR;$/;"	t	typeref:struct:STRUCT_CDR_
+STRUCT_CDR_	fax_queue.h	/^typedef struct  STRUCT_CDR_$/;"	s
+STRUCT_CDR_LIST	send_cdr.h	/^}STRUCT_CDR_LIST;$/;"	t	typeref:struct:STRUCT_CDR_LIST_
+STRUCT_CDR_LIST_	send_cdr.h	/^typedef struct STRUCT_CDR_LIST_$/;"	s
+STRUCT_CDR_PATH	fax_queue.h	/^}STRUCT_CDR_PATH;$/;"	t	typeref:struct:STRUCT_CDR_PATH_
+STRUCT_CDR_PATH_	fax_queue.h	/^typedef struct  STRUCT_CDR_PATH_$/;"	s
+SVM_DONE	vpu.h	10;"	d
+SVM_FILE	conf.h	9;"	d
+SVM_KILL	vpu.h	9;"	d
+SVM_STOP	vpu.h	8;"	d
+SYSLOG_LEVEL	conn_serv.h	11;"	d
+SampleRate	fax_decode.c	/^    uint32 SampleRate;          \/\/18H 4 int 采样率（每秒样本数），表示每个通道的播放速度，  $/;"	m	struct:__anon6	file:
+SetupLogging	daemon.c	/^static void SetupLogging (void) {$/;"	f	file:
+SignalHandlerSigusr1	daemon.c	/^static void SignalHandlerSigusr1 (__attribute__((unused))int signo) {$/;"	f	file:
+SubChunk1ID	fax_decode.c	/^    uint32 SubChunk1ID;         \/\/0CH 4 char "fmt "标志  $/;"	m	struct:__anon6	file:
+SubChunk1Size	fax_decode.c	/^    uint32 SubChunk1Size;       \/\/10H 4 0x12000000H(ALAW)  $/;"	m	struct:__anon6	file:
+TAILQ_END	yaml_conf.h	77;"	d
+TAILQ_ENTRY	yaml_conf.h	22;"	d
+TAILQ_FIRST	yaml_conf.h	76;"	d
+TAILQ_FOREACH	yaml_conf.h	79;"	d
+TAILQ_HEAD	yaml_conf.h	16;"	d
+TAILQ_INIT	yaml_conf.h	64;"	d
+TAILQ_INSERT_TAIL	yaml_conf.h	69;"	d
+TAILQ_NEXT	yaml_conf.h	78;"	d
+TAILQ_REMOVE	yaml_conf.h	95;"	d
+TARGET	Makefile	/^TARGET = vpu$/;"	m
+TS_NUM	voice_parser.h	19;"	d
+TYPE_FAX	file_server.c	29;"	d	file:
+TYPE_VOICE	file_server.c	28;"	d	file:
+TellWaitingParent	daemon.c	/^static void TellWaitingParent (pid_t pid) {$/;"	f	file:
+Temp1	fax_decode.c	/^    uint32 Temp1;                               \/\/2AH 4 0x04000000H  $/;"	m	struct:__anon6	file:
+Temp2	fax_decode.c	/^    uint32 Temp2;                               \/\/2EH 4 0x00530700H  $/;"	m	struct:__anon6	file:
+VOICE_BUF_SIZE	voice_parser.h	12;"	d
+VPU_BUFSIZE	conn_serv.c	25;"	d	file:
+VPU_FILE	conf.h	8;"	d
+WORKER_NUM	vpu.h	25;"	d
+WaitForChild	daemon.c	/^static void WaitForChild (pid_t pid) {$/;"	f	file:
+WaveFact	fax_decode.c	/^    uint32 WaveFact;                        \/\/26H 4 char "fact"标志  $/;"	m	struct:__anon6	file:
+YAML_VERSION_MAJOR	yaml_conf.c	9;"	d	file:
+YAML_VERSION_MINOR	yaml_conf.c	10;"	d	file:
+_GNU_SOURCE	vpu_worker.c	1;"	d	file:
+_Q_INVALIDATE	yaml_conf.h	93;"	d
+__ATOMIC_T__	atomic.h	2;"	d
+__CONF_H__	conf.h	2;"	d
+__CONN_SERV_H__	conn_serv.h	2;"	d
+__COUNTER_H__	counter.h	2;"	d
+__CYCLE_OPERATION_H__	cycle_operation.h	2;"	d
+__FAX_PRE__	fax_decode.h	2;"	d
+__FAX_QUEUE_H__	fax_queue.h	2;"	d
+__FILE_SERVER_H__	file_server.h	2;"	d
+__PKT_FIFO_H__	pkt_fifo.h	2;"	d
+__SEND_CDR__	send_cdr.h	2;"	d
+__UTIL_DAEMON_H__	daemon.h	2;"	d
+__VOICE_PARSER_H__	voice_parser.h	2;"	d
+__VPU_H__	vpu.h	2;"	d
+__VPU_WORKER__	vpu_worker.h	2;"	d
+__YAML_CONF_H__	yaml_conf.h	2;"	d
+ack	send_cdr.h	/^	unsigned short  ack;$/;"	m	struct:STRUCT_CDR_LIST_
+all_count_	counter.h	/^typedef struct all_count_ {$/;"	s
+all_count_t	counter.h	/^} all_count_t;$/;"	t	typeref:struct:all_count_
+all_pkts	counter.c	/^atomic64_t all_pkts;$/;"	v
+allow_override	yaml_conf.h	/^	int allow_override;$/;"	m	struct:ConfNode_
+app_name	conf.h	/^    char app_name[64];$/;"	m	struct:vpu_param_
+atomic16_add	atomic.h	/^static inline uint16_t atomic16_add(atomic16_t *v, uint16_t inc)$/;"	f
+atomic16_add_return	atomic.h	/^static inline uint16_t atomic16_add_return(atomic16_t *v, uint16_t inc)$/;"	f
+atomic16_clear	atomic.h	/^static inline void atomic16_clear(atomic16_t *v)$/;"	f
+atomic16_dec	atomic.h	/^static inline void atomic16_dec(atomic16_t *v)$/;"	f
+atomic16_inc	atomic.h	/^static inline void atomic16_inc(atomic16_t *v)$/;"	f
+atomic16_init	atomic.h	/^static inline void atomic16_init(atomic16_t *v)$/;"	f
+atomic16_read	atomic.h	/^static inline uint16_t atomic16_read(const atomic16_t *v)$/;"	f
+atomic16_set	atomic.h	/^static inline void atomic16_set(atomic16_t *v, uint16_t new_value)$/;"	f
+atomic16_sub	atomic.h	/^static inline uint16_t atomic16_sub(atomic16_t *v, uint16_t dec)$/;"	f
+atomic16_sub_return	atomic.h	/^static inline uint16_t atomic16_sub_return(atomic16_t *v, uint16_t dec)$/;"	f
+atomic16_t	atomic.h	/^} atomic16_t;$/;"	t	typeref:struct:__anon1
+atomic32_add	atomic.h	/^static inline uint32_t atomic32_add(atomic32_t *v, uint32_t inc)$/;"	f
+atomic32_add_return	atomic.h	/^static inline uint32_t atomic32_add_return(atomic32_t *v, uint32_t inc)$/;"	f
+atomic32_clear	atomic.h	/^static inline void atomic32_clear(atomic32_t *v)$/;"	f
+atomic32_dec	atomic.h	/^static inline void atomic32_dec(atomic32_t *v)$/;"	f
+atomic32_inc	atomic.h	/^static inline void atomic32_inc(atomic32_t *v)$/;"	f
+atomic32_inc_and_test	atomic.h	/^static inline int atomic32_inc_and_test(atomic32_t *v)$/;"	f
+atomic32_init	atomic.h	/^static inline void atomic32_init(atomic32_t *v)$/;"	f
+atomic32_read	atomic.h	/^static inline uint32_t atomic32_read(const atomic32_t *v)$/;"	f
+atomic32_set	atomic.h	/^static inline void atomic32_set(atomic32_t *v, uint32_t new_value)$/;"	f
+atomic32_sub	atomic.h	/^static inline uint32_t atomic32_sub(atomic32_t *v, uint32_t dec)$/;"	f
+atomic32_sub_return	atomic.h	/^static inline uint32_t atomic32_sub_return(atomic32_t *v, uint32_t dec)$/;"	f
+atomic32_t	atomic.h	/^} atomic32_t;$/;"	t	typeref:struct:__anon2
+atomic64_add	atomic.h	/^static inline uint32_t atomic64_add(atomic64_t *v, uint64_t inc)$/;"	f
+atomic64_add_return	atomic.h	/^static inline uint32_t atomic64_add_return(atomic64_t *v, uint64_t inc)$/;"	f
+atomic64_clear	atomic.h	/^static inline void atomic64_clear(atomic64_t *v)$/;"	f
+atomic64_dec	atomic.h	/^static inline void atomic64_dec(atomic64_t *v)$/;"	f
+atomic64_inc	atomic.h	/^static inline void atomic64_inc(atomic64_t *v)$/;"	f
+atomic64_inc_and_test	atomic.h	/^static inline int atomic64_inc_and_test(atomic64_t *v)$/;"	f
+atomic64_init	atomic.h	/^static inline void atomic64_init(atomic64_t *v)$/;"	f
+atomic64_read	atomic.h	/^static inline uint64_t atomic64_read(const atomic64_t *v)$/;"	f
+atomic64_set	atomic.h	/^static inline void atomic64_set(atomic64_t *v, uint64_t new_value)$/;"	f
+atomic64_sub	atomic.h	/^static inline uint32_t atomic64_sub(atomic64_t *v, uint64_t dec)$/;"	f
+atomic64_sub_return	atomic.h	/^static inline uint32_t atomic64_sub_return(atomic64_t *v, uint64_t dec)$/;"	f
+atomic64_t	atomic.h	/^} atomic64_t;$/;"	t	typeref:struct:__anon3
+bit_rate	fax_decode.c	/^    int bit_rate;$/;"	m	struct:__anon5	file:
+buf_down	fax_queue.h	/^    char  buf_down[FAX_BUF_SIZE];$/;"	m	struct:STRUCT_CDR_PATH_
+buf_up	fax_queue.h	/^    char  buf_up[FAX_BUF_SIZE];$/;"	m	struct:STRUCT_CDR_PATH_
+call_end	counter.c	/^atomic64_t call_end;$/;"	v
+call_end	counter.h	/^    uint64_t call_end;$/;"	m	struct:all_count_
+call_end	counter.h	/^    uint64_t call_end;$/;"	m	struct:worker_count_
+call_online	counter.c	/^atomic64_t call_online;$/;"	v
+call_start	counter.c	/^atomic64_t call_start;$/;"	v
+call_start	counter.h	/^    uint64_t call_start;$/;"	m	struct:all_count_
+call_start	counter.h	/^    uint64_t call_start;$/;"	m	struct:worker_count_
+call_timeout	counter.c	/^atomic64_t call_timeout;$/;"	v
+call_timeout	counter.h	/^    uint64_t call_timeout;$/;"	m	struct:all_count_
+call_timeout	counter.h	/^    uint64_t call_timeout;$/;"	m	struct:worker_count_
+callflag	fax_queue.h	/^    unsigned char callflag;$/;"	m	struct:STRUCT_CDR_
+callid	fax_queue.h	/^    uint64_t callid;$/;"	m	struct:STRUCT_CDR_
+callid	voice_parser.h	/^    uint64_t callid;$/;"	m	struct:voice_file_info_
+case_mark	voice_parser.h	/^    uint8_t case_mark;$/;"	m	struct:voice_file_info_
+cconnect	fax_decode.c	/^int cconnect(char *ip, int port)$/;"	f
+cdr	fax_queue.h	/^    STRUCT_CDR  cdr;$/;"	m	struct:STRUCT_CDR_PATH_
+cdr	voice_parser.h	/^    STRUCT_CDR cdr;$/;"	m	struct:voice_file_info_
+cdr_buf	send_cdr.h	/^	STRUCT_CDR cdr_buf[65536];$/;"	m	struct:STRUCT_CDR_LIST_
+cdr_init	send_cdr.c	/^void cdr_init(void)$/;"	f
+cdr_insert	send_cdr.c	/^void cdr_insert(STRUCT_CDR *signal)$/;"	f
+cdr_ip	conf.c	/^char cdr_ip[16];$/;"	v
+cdr_node	voice_parser.h	/^    STRUCT_CDR_PATH *cdr_node;$/;"	m	struct:voice_file_info_
+cdr_port	conf.c	/^uint16_t cdr_port;$/;"	v
+cdr_reset_send	send_cdr.c	/^static inline void cdr_reset_send()$/;"	f	file:
+cdr_send	send_cdr.c	/^static int cdr_send(int fd)$/;"	f	file:
+cdr_update_ack	send_cdr.c	/^static void cdr_update_ack(unsigned short ack)$/;"	f	file:
+change_fax_status	conf.c	/^int change_fax_status(uint32_t fax_id, uint32_t status)$/;"	f
+change_name_format	cycle_operation.c	/^int change_name_format(char *tmpname, char *filename)$/;"	f
+check_filename	cycle_operation.c	/^int check_filename(char *name)$/;"	f
+check_rx_dcs	fax_decode.c	/^static int check_rx_dcs(unsigned int idx, const uint8_t *msg, int len)$/;"	f	file:
+check_voice_file	file_server.c	/^int check_voice_file(uint64_t callid, uint16_t scase, char *filename_up, char *filename_down, uint32_t *file_size)$/;"	f
+cleanup_file_struct	voice_parser.c	/^int cleanup_file_struct(voice_file_info_t *file)$/;"	f
+close_voice_file	voice_parser.c	/^int close_voice_file(voice_file_info_t *file)$/;"	f
+cmd_parser	file_server.c	/^int cmd_parser(uint8_t *buf, int buf_len, uint64_t *callid, uint16_t *scase, uint16_t *stime, uint16_t *stype)$/;"	f
+cnt	atomic.h	/^	volatile uint16_t cnt; \/**< An internal counter value. *\/$/;"	m	struct:__anon1
+cnt	atomic.h	/^	volatile uint32_t cnt; \/**< An internal counter value. *\/$/;"	m	struct:__anon2
+cnt	atomic.h	/^    volatile uint64_t cnt;$/;"	m	struct:__anon3
+conf_file	conf.h	/^    char conf_file[128];$/;"	m	struct:vpu_param_
+conf_state	yaml_conf.c	/^enum conf_state {$/;"	g	file:
+config_parser	conf.c	/^int config_parser(int argc, char *argv[])$/;"	f
+conn_cdr_thread	send_cdr.c	/^void *conn_cdr_thread(__attribute__((unused))void *arg)$/;"	f
+conn_ma	conn_serv.c	/^void *conn_ma(__attribute__((unused))void *arg)$/;"	f
+conn_sguard	conn_serv.c	/^void *conn_sguard(__attribute__((unused))void *arg)$/;"	f
+connect2cdr	send_cdr.c	/^int connect2cdr(void)$/;"	f
+connect2ma	conn_serv.c	/^int connect2ma(void)$/;"	f
+connect2sguard	conn_serv.c	/^int connect2sguard(void)$/;"	f
+count	pkt_fifo.h	/^    atomic32_t count;$/;"	m	struct:pkt_fifo_
+create_all_dirs	conf.c	/^void create_all_dirs(int year, int mon, int day)$/;"	f
+create_file_dirs	conf.c	/^int create_file_dirs(char *root, int year, int month, int day)$/;"	f
+create_tcp_server	file_server.c	/^int create_tcp_server(char *ip, uint16_t port)$/;"	f
+current_fallback	fax_decode.c	/^int current_fallback[6] = {0, 0, 0, 0, 0, 0};$/;"	v
+cycle_thread	cycle_operation.c	/^void *cycle_thread(__attribute__((unused))void *arg)$/;"	f
+daemon_flag	vpu.c	/^static int daemon_flag = 1;$/;"	v	file:
+daemonize	daemon.c	/^void daemonize (void) {$/;"	f
+data_count_down	voice_parser.h	/^    uint32_t data_count_down;$/;"	m	struct:voice_file_info_
+data_count_up	voice_parser.h	/^    uint32_t data_count_up;$/;"	m	struct:voice_file_info_
+data_down	voice_parser.h	/^    uint8_t data_down[VOICE_BUF_SIZE * MAX_BUF_NUM];$/;"	m	struct:voice_file_info_
+data_mark	voice_parser.h	/^    uint8_t data_mark;$/;"	m	struct:voice_file_info_
+data_up	voice_parser.h	/^    uint8_t data_up[VOICE_BUF_SIZE * MAX_BUF_NUM];$/;"	m	struct:voice_file_info_
+dcs_code	fax_decode.c	/^    uint8_t dcs_code;$/;"	m	struct:__anon5	file:
+decode_20digit_msg	fax_decode.c	/^static void decode_20digit_msg(const uint8_t *pkt, int len)$/;"	f	file:
+decode_alaw	fax_decode.c	/^int decode_alaw(unsigned long idx, char *decode_name)$/;"	f
+decode_mem	fax_decode.c	/^int decode_mem(int pth_no, char *buf, int length, long long callid)$/;"	f
+decode_test	fax_decode.c	/^int decode_test = FALSE;$/;"	v
+delete_invalid_file	cycle_operation.c	/^int delete_invalid_file(char *filename, char *path)$/;"	f
+dev	conf.h	/^    char dev[64];$/;"	m	struct:vpu_param_
+dev_mac	conf.h	/^    uint8_t dev_mac[6];$/;"	m	struct:vpu_param_
+dev_parser	conf.c	/^int dev_parser(void)$/;"	f
+dir_name	conf.h	/^    char dir_name[MAX_DIRS_LEN];$/;"	m	struct:file_dirs_node_
+dir_no	voice_parser.h	/^    uint32_t dir_no;$/;"	m	struct:voice_file_info_
+dirs	conf.h	/^    file_dirs_node_t dirs[MAX_DIRS_NUM];$/;"	m	struct:file_dirs_info_
+disk_left	conf.c	/^uint32_t disk_left = 5;$/;"	v
+disk_num	conf.h	/^    uint8_t disk_num;$/;"	m	struct:file_dirs_node_
+dms_conf_file	conf.h	/^    char dms_conf_file[128];$/;"	m	struct:vpu_param_
+dms_ma_reload	conf.c	/^uint8_t dms_ma_reload = 0;$/;"	v
+dms_sguard_reload	conf.c	/^uint8_t dms_sguard_reload = 0;$/;"	v
+down_end_flag	voice_parser.h	/^    uint8_t down_end_flag;$/;"	m	struct:voice_file_info_
+down_lost	voice_parser.h	/^    uint32_t down_lost; $/;"	m	struct:voice_file_info_
+down_no	voice_parser.h	/^    uint8_t down_no; $/;"	m	struct:voice_file_info_
+ecm_data	fax_decode.c	/^uint8_t ecm_data[6][256][260];$/;"	v
+ecm_len	fax_decode.c	/^int16_t ecm_len[6][256];$/;"	v
+encrypt_voice	voice_parser.c	/^int encrypt_voice(uint8_t *data, uint32_t data_len)$/;"	f
+eq	fax_queue.h	/^    QUEUE  *eq;$/;"	m	struct:PTH_STRUCT_
+error_correcting_mode	fax_decode.c	/^int error_correcting_mode[6] = {FALSE, FALSE, FALSE, FALSE, FALSE, FALSE};$/;"	v
+fallback_sequence	fax_decode.c	/^} fallback_sequence[] =$/;"	v	typeref:struct:__anon5	file:
+fast_trained	fax_decode.c	/^int fast_trained[6] = {FAX_NONE, FAX_NONE, FAX_NONE, FAX_NONE, FAX_NONE, FAX_NONE};$/;"	v
+fax_ack	counter.c	/^atomic64_t fax_ack;$/;"	v
+fax_data_len_down	voice_parser.h	/^    uint32_t fax_data_len_down;$/;"	m	struct:voice_file_info_
+fax_data_len_up	voice_parser.h	/^    uint32_t fax_data_len_up;$/;"	m	struct:voice_file_info_
+fax_dequeue	counter.c	/^atomic64_t fax_dequeue;$/;"	v
+fax_dequeue	counter.h	/^    uint64_t fax_dequeue;$/;"	m	struct:all_count_
+fax_enqueue	counter.c	/^atomic64_t fax_enqueue;$/;"	v
+fax_enqueue	counter.h	/^    uint64_t fax_enqueue;$/;"	m	struct:all_count_
+fax_enqueue	counter.h	/^    uint64_t fax_enqueue;$/;"	m	struct:worker_count_
+fax_flag	fax_decode.c	/^int fax_flag[6] = {0, 0, 0, 0, 0, 0};$/;"	v
+fax_info_	conf.h	/^typedef struct fax_info_ {$/;"	s
+fax_info_t	conf.h	/^} fax_info_t;$/;"	t	typeref:struct:fax_info_
+fax_infos	conf.c	/^fax_info_t fax_infos[FAX_NUM_MAX];$/;"	v
+fax_lost	counter.c	/^atomic64_t fax_lost;$/;"	v
+fax_lost	counter.h	/^    uint64_t fax_lost;$/;"	m	struct:all_count_
+fax_lost	counter.h	/^    uint64_t fax_lost;$/;"	m	struct:worker_count_
+fax_no	counter.c	/^atomic64_t fax_no;$/;"	v
+fax_no	counter.h	/^    uint64_t fax_no;$/;"	m	struct:all_count_
+fax_num	conf.c	/^uint32_t fax_num = 0;$/;"	v
+fax_pic_info_	file_server.h	/^typedef struct fax_pic_info_ {$/;"	s
+fax_pic_info_t	file_server.h	/^} fax_pic_info_t;$/;"	t	typeref:struct:fax_pic_info_
+fax_pre	fax_decode.c	/^void *fax_pre(void *arg)$/;"	f
+fax_send	counter.c	/^atomic64_t fax_send;$/;"	v
+fax_yes	counter.c	/^atomic64_t fax_yes;$/;"	v
+fax_yes	counter.h	/^    uint64_t fax_yes;$/;"	m	struct:all_count_
+fd	conf.h	/^    int fd;$/;"	m	struct:fax_info_
+file_dir_no	conf.c	/^atomic32_t file_dir_no;$/;"	v
+file_dirs	conf.c	/^file_dirs_info_t file_dirs;$/;"	v
+file_dirs_info_	conf.h	/^typedef struct file_dirs_info_ {$/;"	s
+file_dirs_info_t	conf.h	/^} file_dirs_info_t;$/;"	t	typeref:struct:file_dirs_info_
+file_dirs_node_	conf.h	/^typedef struct file_dirs_node_ {$/;"	s
+file_dirs_node_t	conf.h	/^} file_dirs_node_t;$/;"	t	typeref:struct:file_dirs_node_
+file_dirs_parser	conf.c	/^int file_dirs_parser(void)$/;"	f
+file_fail	counter.c	/^atomic64_t file_fail;$/;"	v
+file_fail	counter.h	/^    uint64_t file_fail;$/;"	m	struct:all_count_
+file_fail	counter.h	/^    uint64_t file_fail;$/;"	m	struct:worker_count_
+file_ok	counter.c	/^atomic64_t file_ok;$/;"	v
+file_ok	counter.h	/^    uint64_t file_ok;$/;"	m	struct:all_count_
+file_ok	counter.h	/^    uint64_t file_ok;$/;"	m	struct:worker_count_
+file_server_thread	file_server.c	/^void *file_server_thread(__attribute__((unused))void *arg)$/;"	f
+file_tx_thread	file_server.c	/^void *file_tx_thread(void *arg)$/;"	f
+filename_down	voice_parser.h	/^    char filename_down[MAX_FILENAME_SIZE];$/;"	m	struct:voice_file_info_
+filename_up	voice_parser.h	/^    char filename_up[MAX_FILENAME_SIZE];$/;"	m	struct:voice_file_info_
+fill_file_dirs	conf.c	/^int fill_file_dirs(char *dir, uint8_t disk)$/;"	f
+find_fallback_entry	fax_decode.c	/^static int find_fallback_entry(int dcs_code)$/;"	f	file:
+flag	conf.h	/^    uint8_t flag;$/;"	m	struct:fax_info_
+flag	fax_queue.h	/^    int    flag;$/;"	m	struct:PTH_STRUCT_
+fp_down	voice_parser.h	/^    FILE *fp_down;$/;"	m	struct:voice_file_info_
+fp_up	voice_parser.h	/^    FILE *fp_up;$/;"	m	struct:voice_file_info_
+fq	fax_queue.h	/^    QUEUE  *fq;$/;"	m	struct:PTH_STRUCT_
+g_cdr_buff	send_cdr.c	/^STRUCT_CDR_LIST g_cdr_buff;$/;"	v
+g_counter_field_arrays	conn_serv.c	/^struct count_struct g_counter_field_arrays[14]={$/;"	v	typeref:struct:count_struct
+get_cdr_ip_and_port	conf.c	/^int get_cdr_ip_and_port(char *ip, uint32_t len, uint32_t *port)$/;"	f
+get_cdr_ip_port	conf.c	/^int get_cdr_ip_port(void)$/;"	f
+get_dev	conf.c	/^char *get_dev(void)$/;"	f
+get_disk_left	conf.c	/^int get_disk_left(void)$/;"	f
+get_dms_conf	conf.c	/^int get_dms_conf(void)$/;"	f
+get_fax_ip_port	conf.c	/^int get_fax_ip_port(void)$/;"	f
+get_fax_pic_info	file_server.c	/^int get_fax_pic_info(char *filename_up, char *filename_down, fax_pic_info_t *fax_pic, uint32_t *data_size)$/;"	f
+get_file_struct	voice_parser.c	/^voice_file_info_t *get_file_struct(uint64_t callid)$/;"	f
+get_filename	voice_parser.c	/^inline int get_filename(voice_file_info_t *file)$/;"	f
+get_local_mac	conf.c	/^static int get_local_mac(vpu_param_t *vpu_conf)$/;"	f	file:
+get_ma_port	conf.c	/^int get_ma_port(void)$/;"	f
+get_root_dir	voice_parser.c	/^char *get_root_dir(voice_file_info_t *file)$/;"	f
+get_server_ip_port	conf.c	/^int get_server_ip_port(void)$/;"	f
+get_sguard_port	conf.c	/^int get_sguard_port(void)$/;"	f
+get_status	conn_serv.c	/^uint8_t get_status(void)$/;"	f
+get_storage_time	conf.c	/^int get_storage_time(void)$/;"	f
+get_svm_conf	conf.c	/^int get_svm_conf(void)$/;"	f
+get_vpu_conf	conf.c	/^int get_vpu_conf(void)$/;"	f
+get_vpu_id	conf.c	/^int get_vpu_id(void)$/;"	f
+hdlc_accept	fax_decode.c	/^static void hdlc_accept(void *user_data, const uint8_t *msg, int len, int ok)$/;"	f	file:
+hdlcrx	fax_decode.c	/^hdlc_rx_state_t hdlcrx[6];$/;"	v
+head	yaml_conf.h	/^	TAILQ_HEAD(, ConfNode_) head;$/;"	m	struct:ConfNode_
+id	conf.h	/^    uint32_t id;$/;"	m	struct:fax_info_
+image_width	fax_decode.c	/^int image_width[6] = {1728, 1728, 1728, 1728, 1728, 1728};$/;"	v
+in	pkt_fifo.h	/^    uint32_t in;$/;"	m	struct:pkt_fifo_
+init_alaw_head	fax_decode.c	/^void init_alaw_head(PALAW_HEAD head)$/;"	f
+init_atomic_counter	counter.c	/^void init_atomic_counter(void)$/;"	f
+init_connect	fax_decode.c	/^void init_connect()$/;"	f
+init_file_dirs	conf.c	/^void init_file_dirs(void)$/;"	f
+init_pkt_fifo	pkt_fifo.c	/^void init_pkt_fifo(void)$/;"	f
+init_reload_file_dirs	conf.c	/^void init_reload_file_dirs(void)$/;"	f
+init_voice_file	voice_parser.c	/^int init_voice_file(void)$/;"	f
+ip	conf.h	/^    char ip[16];$/;"	m	struct:fax_info_
+ip_ma	conf.h	/^    char ip_ma[16];$/;"	m	struct:vpu_param_
+ip_sguard	conf.h	/^    char ip_sguard[16]; $/;"	m	struct:vpu_param_
+is_seq	yaml_conf.h	/^	int is_seq;$/;"	m	struct:ConfNode_
+len	fax_queue.h	/^    int              len;$/;"	m	struct:QUEUE_
+likely	vpu.h	18;"	d
+likely	yaml_conf.h	8;"	d
+line_encoding	fax_decode.c	/^int line_encoding[6] = {T4_COMPRESSION_ITU_T4_1D, T4_COMPRESSION_ITU_T4_1D, T4_COMPRESSION_ITU_T4_1D, T4_COMPRESSION_ITU_T4_1D, T4_COMPRESSION_ITU_T4_1D, T4_COMPRESSION_ITU_T4_1D};$/;"	v
+lock	send_cdr.h	/^	pthread_mutex_t lock;$/;"	m	struct:STRUCT_CDR_LIST_
+lost_pkts	counter.c	/^atomic64_t lost_pkts;$/;"	v
+lost_pkts	counter.h	/^    uint64_t lost_pkts;$/;"	m	struct:all_count_
+ma_cmd_get_counter	conn_serv.c	/^int ma_cmd_get_counter(int sockfd, uint16_t sn)$/;"	f
+ma_cmd_parser	conn_serv.c	/^int ma_cmd_parser(uint8_t *pkt, uint32_t pkt_len, int sockfd)$/;"	f
+ma_cmd_reload	conn_serv.c	/^int ma_cmd_reload(uint8_t *data, uint32_t data_len)$/;"	f
+ma_cmd_software_status	conn_serv.c	/^int ma_cmd_software_status(uint8_t *data, uint32_t data_len)$/;"	f
+ma_sockfd	conn_serv.c	/^int ma_sockfd;$/;"	v
+main	vpu.c	/^int main(int argc, char *argv[])$/;"	f
+mangle_errors	yaml_conf.c	/^static int mangle_errors = 0;$/;"	v	file:
+max	vpu.h	33;"	d
+min	vpu.h	27;"	d
+modem_type	fax_decode.c	/^    int modem_type;$/;"	m	struct:__anon5	file:
+mutex	fax_queue.h	/^    pthread_mutex_t  mutex;$/;"	m	struct:QUEUE_
+mutex	voice_parser.h	/^    pthread_mutex_t mutex;$/;"	m	struct:voice_file_info_
+name	file_server.h	/^    char name[MAX_DIRS_LEN];$/;"	m	struct:fax_pic_info_
+name	yaml_conf.h	/^	char *name;$/;"	m	struct:ConfNode_
+next	fax_queue.h	/^    struct STRUCT_CDR_PATH_ *next;$/;"	m	struct:STRUCT_CDR_PATH_	typeref:struct:STRUCT_CDR_PATH_::STRUCT_CDR_PATH_
+next	yaml_conf.h	/^	TAILQ_ENTRY(ConfNode_) next;$/;"	m	struct:ConfNode_
+num	conf.h	/^    uint32_t num;$/;"	m	struct:file_dirs_info_
+octets_per_ecm_frame	fax_decode.c	/^int octets_per_ecm_frame[6] = {256, 256, 256, 256, 256, 256};$/;"	v
+open_voice_file	voice_parser.c	/^int open_voice_file(voice_file_info_t *file)$/;"	f
+other_pkts	counter.c	/^atomic64_t other_pkts;$/;"	v
+other_pkts	counter.h	/^    uint64_t other_pkts;$/;"	m	struct:all_count_
+other_pkts	counter.h	/^    uint64_t other_pkts;$/;"	m	struct:worker_count_
+out	pkt_fifo.h	/^    uint32_t out;$/;"	m	struct:pkt_fifo_
+param_parser	conf.c	/^int param_parser(int argc, char *argv[])$/;"	f
+parent	yaml_conf.h	/^	struct ConfNode_ *parent;$/;"	m	struct:ConfNode_	typeref:struct:ConfNode_::ConfNode_
+path	fax_queue.h	/^    unsigned short path;$/;"	m	struct:STRUCT_CDR_
+path_num	conf.c	/^uint8_t path_num = 0;$/;"	v
+phead	fax_queue.h	/^    STRUCT_CDR_PATH  *phead;$/;"	m	struct:QUEUE_
+pkt	pkt_fifo.h	/^    pkt_buf_t pkt[PKT_FIFO_SIZE];$/;"	m	struct:pkt_fifo_
+pkt	pkt_fifo.h	/^    uint8_t *pkt;$/;"	m	struct:pkt_node_
+pkt	pkt_fifo.h	/^    uint8_t pkt[2048];$/;"	m	struct:pkt_buf_
+pkt_buf_	pkt_fifo.h	/^typedef struct pkt_buf_$/;"	s
+pkt_buf_t	pkt_fifo.h	/^} pkt_buf_t;$/;"	t	typeref:struct:pkt_buf_
+pkt_fifo_	pkt_fifo.h	/^typedef struct pkt_fifo_$/;"	s
+pkt_fifo_get	pkt_fifo.c	/^inline int pkt_fifo_get(pkt_fifo_t *fifo, pkt_node_t *node)$/;"	f
+pkt_fifo_put	pkt_fifo.c	/^inline int pkt_fifo_put(pkt_fifo_t *fifo, pkt_node_t *node)$/;"	f
+pkt_fifo_t	pkt_fifo.h	/^} pkt_fifo_t;$/;"	t	typeref:struct:pkt_fifo_
+pkt_fifos	pkt_fifo.c	/^pkt_fifo_t pkt_fifos[WORKER_NUM];$/;"	v
+pkt_len	pkt_fifo.h	/^    uint32_t pkt_len;$/;"	m	struct:pkt_buf_
+pkt_len	pkt_fifo.h	/^    uint32_t pkt_len;$/;"	m	struct:pkt_node_
+pkt_node_	pkt_fifo.h	/^typedef struct pkt_node_$/;"	s
+pkt_node_t	pkt_fifo.h	/^} pkt_node_t;$/;"	t	typeref:struct:pkt_node_
+pkts	counter.h	/^    uint64_t pkts;$/;"	m	struct:all_count_
+port	conf.h	/^    uint32_t port;$/;"	m	struct:fax_info_
+port_ma	conf.h	/^    uint16_t port_ma;$/;"	m	struct:vpu_param_
+port_sguard	conf.h	/^    uint16_t port_sguard;$/;"	m	struct:vpu_param_
+print_frame	fax_decode.c	/^static void print_frame(unsigned int idx, const char *io, const uint8_t *fr, int frlen)$/;"	f	file:
+queue	fax_queue.c	/^PTH_STRUCT queue;$/;"	v
+r_fax_infos	conf.c	/^fax_info_t r_fax_infos[FAX_NUM_MAX];$/;"	v
+r_fax_num	conf.c	/^uint32_t r_fax_num = 0;$/;"	v
+r_file_dirs	conf.c	/^file_dirs_info_t r_file_dirs;$/;"	v
+recv3	fax_queue.h	/^    unsigned int  recv3;$/;"	m	struct:STRUCT_CDR_
+reload_cdr_ip_port	conf.c	/^int reload_cdr_ip_port(void)$/;"	f
+reload_dev_parser	conf.c	/^int reload_dev_parser(void)$/;"	f
+reload_disk_left	conf.c	/^int reload_disk_left(void)$/;"	f
+reload_dms_conf	conf.c	/^int reload_dms_conf(char *cfg_file)$/;"	f
+reload_fax_ip_port	conf.c	/^int reload_fax_ip_port(void)$/;"	f
+reload_file_dirs	conf.c	/^int reload_file_dirs(void)$/;"	f
+reload_fill_file_dirs	conf.c	/^int reload_fill_file_dirs(char *dir, uint8_t disk)$/;"	f
+reload_ma_port	conf.c	/^int reload_ma_port(void)$/;"	f
+reload_server_ip_port	conf.c	/^int reload_server_ip_port(void)$/;"	f
+reload_sguard_port	conf.c	/^int reload_sguard_port(void)$/;"	f
+reload_storage_time	conf.c	/^int reload_storage_time(void)$/;"	f
+reload_svm_conf	conf.c	/^int reload_svm_conf(char *cfg_file)$/;"	f
+reload_vpu_conf	conf.c	/^int reload_vpu_conf(char *cfg_file)$/;"	f
+reload_vpu_id	conf.c	/^int reload_vpu_id(void)$/;"	f
+root	yaml_conf.c	/^static ConfNode *root = NULL;$/;"	v	file:
+root_backup	yaml_conf.c	/^static ConfNode *root_backup = NULL;$/;"	v	file:
+ruleflag	fax_queue.h	/^    unsigned char ruleflag;$/;"	m	struct:STRUCT_CDR_
+rx_bits	fax_decode.c	/^int rx_bits = 0;$/;"	v
+send	send_cdr.h	/^	unsigned short  send;$/;"	m	struct:STRUCT_CDR_LIST_
+send_faxpic_size	file_server.c	/^int send_faxpic_size(uint32_t size, int sockfd)$/;"	f
+send_result	file_server.c	/^int send_result(uint16_t result, int sockfd)$/;"	f
+send_voice_data	voice_parser.c	/^int send_voice_data(voice_file_info_t *file)$/;"	f
+send_voice_size	file_server.c	/^int send_voice_size(uint32_t size, int sockfd)$/;"	f
+server_ip	conf.c	/^char server_ip[16];$/;"	v
+server_port	conf.c	/^uint32_t server_port;$/;"	v
+sguard_num	conn_serv.c	/^static uint16_t sguard_num = 0;$/;"	v	file:
+sigflag	daemon.c	/^static volatile sig_atomic_t sigflag = 0;$/;"	v	file:
+signal_catch	vpu.c	/^static void signal_catch(int sig, void (*handler)(int))$/;"	f	file:
+signal_handler_sigint	vpu.c	/^static void signal_handler_sigint(__attribute__((unused))int sig)$/;"	f	file:
+size	file_server.h	/^    uint32_t size;$/;"	m	struct:fax_pic_info_
+size	pkt_fifo.h	/^    uint32_t size;$/;"	m	struct:pkt_fifo_
+sn	conf.h	/^    uint16_t sn;$/;"	m	struct:vpu_param_
+sn_parser	conf.c	/^int sn_parser(int argc, char *argv[])$/;"	f
+sock_recv_buf	send_cdr.c	/^int sock_recv_buf(int fd, unsigned char *buf, int size)$/;"	f
+sock_send_buf	send_cdr.c	/^int sock_send_buf(int fd, unsigned char *buf, int size)$/;"	f
+storage_time	conf.c	/^uint32_t storage_time = 90;$/;"	v
+strlcat	util-strlcatu.c	/^size_t strlcat(char *dst, const char *src, size_t siz)$/;"	f
+strlcpy	util-strlcpyu.c	/^size_t strlcpy(char *dst, const char *src, size_t siz)$/;"	f
+svm_cdr_reload	conf.c	/^uint8_t svm_cdr_reload = 0;$/;"	v
+svm_conf_file	conf.h	/^    char svm_conf_file[128];$/;"	m	struct:vpu_param_
+svm_fax_reload	conf.c	/^uint8_t svm_fax_reload = 0;$/;"	v
+svm_signal_flags	vpu.c	/^uint8_t svm_signal_flags = 0;$/;"	v
+svm_vpu_reload	conf.c	/^uint8_t svm_vpu_reload = 0;$/;"	v
+t30_dummy	fax_decode.c	/^t30_state_t t30_dummy[6];$/;"	v
+t4_begin	fax_decode.c	/^static void t4_begin(unsigned int idx)$/;"	f	file:
+t4_end	fax_decode.c	/^static void t4_end(unsigned int idx)$/;"	f	file:
+t4_rx_state	fax_decode.c	/^t4_rx_state_t t4_rx_state[6];$/;"	v
+t4_up	fax_decode.c	/^int t4_up[6] = {FALSE, FALSE, FALSE, FALSE, FALSE, FALSE};$/;"	v
+time	fax_queue.h	/^    time_t   time;$/;"	m	struct:STRUCT_CDR_
+tx_fd	voice_parser.h	/^    int tx_fd;$/;"	m	struct:voice_file_info_
+unlikely	vpu.h	21;"	d
+unlikely	yaml_conf.h	11;"	d
+up_end_flag	voice_parser.h	/^    uint8_t up_end_flag;$/;"	m	struct:voice_file_info_
+up_lost	voice_parser.h	/^    uint32_t up_lost;$/;"	m	struct:voice_file_info_
+up_no	voice_parser.h	/^    uint8_t up_no;$/;"	m	struct:voice_file_info_
+update_time	voice_parser.h	/^    time_t update_time;$/;"	m	struct:voice_file_info_
+v17_put_bit	fax_decode.c	/^static void v17_put_bit(void *user_data, int bit)$/;"	f	file:
+v21_put_bit	fax_decode.c	/^static void v21_put_bit(void *user_data, int bit)$/;"	f	file:
+v27ter_put_bit	fax_decode.c	/^static void v27ter_put_bit(void *user_data, int bit)$/;"	f	file:
+v29_put_bit	fax_decode.c	/^static void v29_put_bit(void *user_data, int bit)$/;"	f	file:
+val	yaml_conf.h	/^	char *val;$/;"	m	struct:ConfNode_
+voice_file	voice_parser.c	/^voice_file_info_t voice_file[SR155_NUM][E1_NUM][TS_NUM];$/;"	v
+voice_file_info_	voice_parser.h	/^typedef struct voice_file_info_ {$/;"	s
+voice_file_info_t	voice_parser.h	/^} voice_file_info_t;$/;"	t	typeref:struct:voice_file_info_
+voice_parser	voice_parser.c	/^inline int voice_parser(uint8_t *pkt, uint32_t pkt_len)$/;"	f
+voice_pkts	counter.c	/^atomic64_t voice_pkts;$/;"	v
+voice_pkts	counter.h	/^    uint64_t voice_pkts;$/;"	m	struct:all_count_
+voice_pkts	counter.h	/^    uint64_t voice_pkts;$/;"	m	struct:worker_count_
+vpu_conf	conf.c	/^vpu_param_t vpu_conf;$/;"	v
+vpu_dev_reload	conf.c	/^uint8_t vpu_dev_reload = 0;$/;"	v
+vpu_dir_reload	conf.c	/^uint8_t vpu_dir_reload = 0;$/;"	v
+vpu_fill_alive_packet	conn_serv.c	/^uint32_t vpu_fill_alive_packet(uint8_t *pkt, uint16_t num)$/;"	f
+vpu_fill_info	conn_serv.c	/^uint16_t vpu_fill_info(uint8_t *pkt, uint8_t *info, uint16_t len, uint16_t type)$/;"	f
+vpu_fill_regma_packet	conn_serv.c	/^uint32_t vpu_fill_regma_packet(uint8_t *pkt, uint16_t num)$/;"	f
+vpu_fill_regsguard_packet	conn_serv.c	/^uint32_t vpu_fill_regsguard_packet(uint8_t *pkt, uint16_t num, char *name)$/;"	f
+vpu_id	conf.c	/^uint32_t vpu_id = 0;$/;"	v
+vpu_io_thread	vpu_worker.c	/^void *vpu_io_thread(void *arg)$/;"	f
+vpu_param_	conf.h	/^typedef struct vpu_param_ {$/;"	s
+vpu_param_t	conf.h	/^} vpu_param_t;$/;"	t	typeref:struct:vpu_param_
+vpu_worker_thread	vpu_worker.c	/^void *vpu_worker_thread(void *arg)$/;"	f
+wait	send_cdr.h	/^	unsigned short  wait;$/;"	m	struct:STRUCT_CDR_LIST_
+which	fax_decode.c	/^    int which;$/;"	m	struct:__anon5	file:
+worker_count_	counter.h	/^typedef struct worker_count_ {$/;"	s
+worker_count_t	counter.h	/^} worker_count_t;$/;"	t	typeref:struct:worker_count_
+write_flag	conf.h	/^    uint8_t write_flag;$/;"	m	struct:file_dirs_node_
+write_voice_file	voice_parser.c	/^int write_voice_file(voice_file_info_t *file)$/;"	f
+x_resolution	fax_decode.c	/^int x_resolution[6] = {T4_X_RESOLUTION_R8, T4_X_RESOLUTION_R8, T4_X_RESOLUTION_R8, T4_X_RESOLUTION_R8, T4_X_RESOLUTION_R8, T4_X_RESOLUTION_R8};$/;"	v
+y_resolution	fax_decode.c	/^int y_resolution[6] = {T4_Y_RESOLUTION_STANDARD, T4_Y_RESOLUTION_STANDARD, T4_Y_RESOLUTION_STANDARD, T4_Y_RESOLUTION_STANDARD, T4_Y_RESOLUTION_STANDARD, T4_Y_RESOLUTION_STANDARD};$/;"	v

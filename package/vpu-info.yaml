@@ -1,0 +1,11 @@
+%YAML 1.1
+---
+vpu:
+  version: 2.01.BUILDSTR
+  config-path: /usr/local/etc/vpu/
+  set-config-path: 0
+  executives:
+  - exec: 1
+    cmd: vpu
+    status: daemon,keepalive
+...
